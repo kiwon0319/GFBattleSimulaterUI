@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GFBattleSimulator.Calc
 {
@@ -138,6 +139,36 @@ namespace GFBattleSimulator.Calc
             gunObj["life"] = (stat[0] * int.Parse(gunObj["number"].ToString())).ToString();
 
             return gunObj;
+        }
+    }
+
+    public class FairyObject {
+        static JObject fairydata = JsonUtil.get("fairy");
+        private static JObject fairyObj = new JObject() {
+            {"id","1"},
+            {"fairy_id","0"},
+            {"team_id","1"},
+            {"fairy_lv","100"},
+            {"fairy_exp","3627752"},
+            {"quality_lv","5"},
+            {"quality_exp","3000"},
+            {"skill_lv","10"},
+            {"passive_skill","910102"},
+            {"is_locked","1"},
+            {"equip_id","0"},
+            {"adjust_count","1"},
+            {"last_adjust","0"},
+            {"passive_skill_collect",""},
+            {"skin","3"},
+        };
+        public static JObject get(string code) {
+            foreach (var data in fairydata) {
+                if (data.Value["code"].ToString() == code) {
+                    fairyObj["fairy_id"] = data.Value["id"].ToString();
+                }
+            }
+
+            return fairyObj;
         }
     }
 

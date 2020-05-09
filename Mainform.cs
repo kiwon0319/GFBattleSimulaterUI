@@ -50,6 +50,7 @@ namespace GFBattleSimulator
             closebtn.Text = "\ue8bb";
             normalbtn.Text = "\ue922";
             minimizebtn.Text = "\ue921";
+            run.Text = "\ue768";
 
             UserControlShow(squadcontrol);
 
@@ -299,6 +300,19 @@ namespace GFBattleSimulator
 
                 this.last = e.Location;
             }
+        }
+
+        private void run_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string runfile = Application.StartupPath + "\\GFBattleSimulator.exe";
+                Process.Start(runfile);
+            }
+            catch {
+                MessageBox.Show("실행파일이 없습니다. 해당프로그램은 UI만 제공합니다.\n전투시뮬레이터 프로그램 디렉토리에 넣어주세요", "GFBattleSimulator Alert");
+            }
+            
         }
     }
 }

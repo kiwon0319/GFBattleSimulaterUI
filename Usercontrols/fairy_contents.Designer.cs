@@ -117,6 +117,7 @@
             this.filterbtn.TabIndex = 2;
             this.filterbtn.Text = "filter";
             this.filterbtn.UseVisualStyleBackColor = true;
+            this.filterbtn.Visible = false;
             // 
             // loadbtn
             // 
@@ -131,6 +132,7 @@
             this.loadbtn.TabIndex = 1;
             this.loadbtn.Text = "load";
             this.loadbtn.UseVisualStyleBackColor = true;
+            this.loadbtn.Visible = false;
             // 
             // title
             // 
@@ -182,6 +184,7 @@
             this.trait.Name = "trait";
             this.trait.Size = new System.Drawing.Size(150, 23);
             this.trait.TabIndex = 57;
+            this.trait.SelectedIndexChanged += new System.EventHandler(this.trait_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -220,6 +223,7 @@
             this.skillLv.Name = "skillLv";
             this.skillLv.Size = new System.Drawing.Size(150, 23);
             this.skillLv.TabIndex = 57;
+            this.skillLv.SelectedIndexChanged += new System.EventHandler(this.skillLv_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -522,6 +526,7 @@
             this.toggle1.TabIndex = 58;
             this.toggle1.Title = "토글";
             this.toggle1.toggleState = true;
+            this.toggle1.ToggleChanged += new System.EventHandler(this.toggle1_ToggleChanged);
             // 
             // fairy_tile
             // 
@@ -536,6 +541,7 @@
             this.fairy_tile.Name = "fairy_tile";
             this.fairy_tile.Size = new System.Drawing.Size(128, 204);
             this.fairy_tile.TabIndex = 6;
+            this.fairy_tile.Click += new System.EventHandler(this.fairy_tile_Click);
             // 
             // fairyContents
             // 

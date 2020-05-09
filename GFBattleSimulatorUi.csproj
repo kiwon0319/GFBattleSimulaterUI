@@ -82,6 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Data.cs" />
+    <Compile Include="SelectFairy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectFairy.Designer.cs">
+      <DependentUpon>SelectFairy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mainform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     <Compile Include="Util\FileUtil.cs" />
     <Compile Include="Util\JsonUtil.cs" />
     <Compile Include="Util\QuickSortUtil.cs" />
+    <EmbeddedResource Include="SelectFairy.resx">
+      <DependentUpon>SelectFairy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mainform.ko-KR.resx">
       <DependentUpon>Mainform.cs</DependentUpon>
     </EmbeddedResource>

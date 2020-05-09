@@ -396,6 +396,7 @@
             this.openbtn.TabIndex = 1;
             this.openbtn.Text = "open";
             this.openbtn.UseVisualStyleBackColor = true;
+            this.openbtn.Visible = false;
             // 
             // savebtn
             // 

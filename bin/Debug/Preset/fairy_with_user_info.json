@@ -1,20 +1,19 @@
 {
   "1": {
     "id": "1",
-    "user_id": "121827",
-    "fairy_id": "6",
+    "fairy_id": "2",
     "team_id": "1",
-    "fairy_lv": "79",
+    "fairy_lv": "100",
     "fairy_exp": "3627752",
-    "quality_lv": "4",
-    "quality_exp": "2000",
+    "quality_lv": "5",
+    "quality_exp": "3000",
     "skill_lv": "10",
-    "passive_skill": "910104",
+    "passive_skill": "910102",
     "is_locked": "1",
     "equip_id": "0",
-    "adjust_count": "7",
+    "adjust_count": "1",
     "last_adjust": "0",
-    "passive_skill_collect": "910105,910115,910110,910107,910113,910104",
-    "skin": "0"
+    "passive_skill_collect": "",
+    "skin": "3"
   }
 }

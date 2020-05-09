@@ -20,20 +20,21 @@ namespace GFBattleSimulator
         private JObject data;
         private JObject setting;
         private JObject fairyData;
+        private JObject fairy_trait;
 
         private String[] fairySkill = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
         private string[] fairyTrait = 
             { 
-            "살상계 I", 
-            "살상계 II", 
-            "정밀계 I", 
-            "정밀계 II", 
-            "회피계 I",
-            "회피계 II",
-            "장갑계 I",
-            "장갑계 II",
-            "필살계 I",
-            "필살계 II",
+            "살상계I", 
+            "살상계II", 
+            "정밀계I", 
+            "정밀계II", 
+            "회피계I",
+            "회피계II",
+            "장갑계I",
+            "장갑계II",
+            "필살계I",
+            "필살계II",
             "선봉계",
             "돌격계",
             "조준계",
@@ -58,10 +59,8 @@ namespace GFBattleSimulator
             filterbtn.Text = "\ue71c";
 
             skillLv.Items.AddRange(fairySkill);
-            skillLv.SelectedIndex = 0;
 
             trait.Items.AddRange(fairyTrait);
-            trait.SelectedIndex = 0;
         }
 
         private void UserControl4_SizeChanged(object sender, EventArgs e)
@@ -84,40 +83,72 @@ namespace GFBattleSimulator
 
         private void fairyContents_Load(object sender, EventArgs e)
         {
+            refresh();
+        }
+
+        public void refresh() {
             string id;
             string src;
-            int skin;
-            
+
             setting = JsonParse.JObjectRead("./GFBattleSimulator.json");
             data = JsonParse.JObjectRead("./Preset/fairy_with_user_info.json");
             fairyData = JsonUtil.get("fairy");
+            fairy_trait = JsonUtil.get("fairy_trait");
 
             toggle1.toggleState = bool.Parse(setting["battle"]["fairy_skill"].ToString());
 
             id = data["1"]["fairy_id"].ToString();
 
-            switch (data["1"]["quality_lv"].ToString()) {
-                case "1":
-                case "2":
-                    skin = 1;
-                    break;
-                case "3":
-                case "4":
-                    skin = 2;
-                    break;
-                case "5":
-                    skin = 3;
-                    break;
-                default:
-                    skin = 1;
-                    break;
+            if (int.Parse(fairy_trait[data["1"]["passive_skill"].ToString()]["is_rare"].ToString()) == 1)
+            {
+                src = string.Format("./Resource/fairy_card/{0}_{1}_ext.png", fairyData[id]["code"], data["1"]["quality_lv"]);
+            }
+            else {
+                src = string.Format("./Resource/fairy_card/{0}_{1}.png", fairyData[id]["code"], data["1"]["quality_lv"]);
             }
 
-            src = string.Format("./Resource/fairy_card/{0}_{1}.png", fairyData[id]["code"],data["1"]["quality_lv"]);
-            Debug.WriteLine(src);
-
             fairy_tile.BackgroundImage = Image.FromFile(src);
+
             skillLv.SelectedItem = data["1"]["skill_lv"].ToString();
+            trait.SelectedItem = fairy_trait[data["1"]["passive_skill"].ToString()]["name"].ToString();
+        }
+
+        private void skillLv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            data["1"]["skill_lv"] = skillLv.SelectedItem.ToString();
+            System.IO.File.WriteAllText("./Preset/fairy_with_user_info.json", data.ToString());
+            refresh();
+        }
+
+        private void toggle1_ToggleChanged(object sender, EventArgs e)
+        {
+            setting["battle"]["fairy_skill"] = toggle1.toggleState;
+            System.IO.File.WriteAllText("./GFBattleSimulator.json",setting.ToString());
+        }
+        
+        private string trait2Id(string name) {
+            string result = "error";
+
+            foreach (var d in fairy_trait) {
+                if (d.Value["name"].ToString() == name)
+                    return d.Value["id"].ToString();
+            }
+
+            return result;
+        }
+
+        private void trait_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            data["1"]["passive_skill"] = trait2Id(trait.SelectedItem.ToString());
+            System.IO.File.WriteAllText("./Preset/fairy_with_user_info.json", data.ToString());
+            refresh();
+        }
+
+        private void fairy_tile_Click(object sender, EventArgs e)
+        {
+            SelectFairy select = new SelectFairy(fairyData[data["1"]["fairy_id"].ToString()]["code"].ToString());
+            select.ShowDialog();
+            refresh();
         }
     }
 }

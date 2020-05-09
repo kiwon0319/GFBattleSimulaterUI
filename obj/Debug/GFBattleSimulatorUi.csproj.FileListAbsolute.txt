@@ -23,3 +23,4 @@ C:\Users\rldnj\Workspace\GFBattleSimulator\obj\Debug\GFBattleSimulatorUI.exe
 C:\Users\rldnj\Workspace\GFBattleSimulator\obj\Debug\GFBattleSimulatorUI.pdb
 C:\Users\rldnj\Workspace\GFBattleSimulator\obj\Debug\GFBattleSimulator.Usercontrols.Toggle.resources
 C:\Users\rldnj\Workspace\GFBattleSimulator\obj\Debug\GFBattleSimulator.Usercontrols.fairy_tile.resources
+C:\Users\rldnj\Workspace\GFBattleSimulator\obj\Debug\GFBattleSimulator.SelectFairy.resources

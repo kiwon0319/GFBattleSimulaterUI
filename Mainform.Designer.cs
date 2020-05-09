@@ -49,6 +49,8 @@
             this.normalbtn = new System.Windows.Forms.Button();
             this.closebtn = new System.Windows.Forms.Button();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.run = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -179,6 +181,8 @@
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.header.Controls.Add(this.run);
+            this.header.Controls.Add(this.panel2);
             this.header.Controls.Add(this.minimizebtn);
             this.header.Controls.Add(this.normalbtn);
             this.header.Controls.Add(this.closebtn);
@@ -223,6 +227,22 @@
             resources.ApplyResources(this.contentPanel, "contentPanel");
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.SizeChanged += new System.EventHandler(this.contentPanel_SizeChanged);
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // run
+            // 
+            resources.ApplyResources(this.run, "run");
+            this.run.FlatAppearance.BorderSize = 0;
+            this.run.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.run.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.run.ForeColor = System.Drawing.Color.White;
+            this.run.Name = "run";
+            this.run.UseVisualStyleBackColor = true;
+            this.run.Click += new System.EventHandler(this.run_Click);
             // 
             // Main
             // 
@@ -269,6 +289,8 @@
         private System.Windows.Forms.Panel settingpanel;
         private System.Windows.Forms.Button settingbtn;
         private System.Windows.Forms.Panel settingIndicator;
+        private System.Windows.Forms.Button run;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
