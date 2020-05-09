@@ -1,0 +1,20 @@
+{
+  "1": {
+    "id": "1",
+    "user_id": "343650",
+    "fairy_id": "21",
+    "team_id": "1",
+    "fairy_lv": "100",
+    "fairy_exp": "9999000",
+    "quality_lv": "5",
+    "quality_exp": "550",
+    "skill_lv": "10",
+    "passive_skill": "910121",
+    "is_locked": "1",
+    "equip_id": "0",
+    "adjust_count": "0",
+    "last_adjust": "0",
+    "passive_skill_collect": "910121",
+    "skin": "0"
+  }
+}

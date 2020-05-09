@@ -1,0 +1,12 @@
+{
+  "language": "ko-KR",
+  "port": 9008,
+  "battle": {
+    "type": "Night",
+    "enemy_team_id": 5000,
+    "boss_hp": 1000,
+    "theater_area_id": 0,
+    "enemy_teams": [],
+    "fairy_skill": true
+  }
+}

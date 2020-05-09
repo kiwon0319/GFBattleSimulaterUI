@@ -1,0 +1,47 @@
+[
+  {
+    "id": 3211,
+    "user_id": 343650,
+    "team_id": 5,
+    "ammo": 10,
+    "mre": 10,
+    "info": {
+      "1": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "2": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "3": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "4": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "5": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "6": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "7": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "8": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      },
+      "9": {
+        "sangvis_with_user_id": 0,
+        "position": 0
+      }
+    }
+  }
+]

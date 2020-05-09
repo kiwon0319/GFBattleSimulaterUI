@@ -1,0 +1,403 @@
+{
+    "mall_list": {},
+    "max_cost_list": [
+        {
+            "id": "1",
+            "max_type": "1",
+            "max_num": "0",
+            "field": "maxgun",
+            "step": "10",
+            "cost": "280"
+        },
+        {
+            "id": "40",
+            "max_type": "11",
+            "max_num": "0",
+            "field": "max_sangvis",
+            "step": "10",
+            "cost": "280"
+        },
+        {
+            "id": "35",
+            "max_type": "9",
+            "max_num": "0",
+            "field": "max_fairy",
+            "step": "10",
+            "cost": "280"
+        },
+        {
+            "id": "2",
+            "max_type": "2",
+            "max_num": "0",
+            "field": "maxequip",
+            "step": "20",
+            "cost": "120"
+        },
+        {
+            "id": "33",
+            "max_type": "8",
+            "max_num": "3",
+            "field": "max_gun_preset",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "25",
+            "max_type": "7",
+            "max_num": "3",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "36",
+            "max_type": "10",
+            "max_num": "3",
+            "field": "max_upgrade_slot",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "26",
+            "max_type": "7",
+            "max_num": "4",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "34",
+            "max_type": "8",
+            "max_num": "4",
+            "field": "max_gun_preset",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "37",
+            "max_type": "10",
+            "max_num": "4",
+            "field": "max_upgrade_slot",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "27",
+            "max_type": "7",
+            "max_num": "5",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "15",
+            "max_type": "5",
+            "max_num": "5",
+            "field": "max_fix_slot",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "38",
+            "max_type": "8",
+            "max_num": "5",
+            "field": "max_gun_preset",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "3",
+            "max_type": "3",
+            "max_num": "5",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "480"
+        },
+        {
+            "id": "28",
+            "max_type": "7",
+            "max_num": "6",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "4",
+            "max_type": "3",
+            "max_num": "6",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "19",
+            "max_type": "6",
+            "max_num": "6",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "180"
+        },
+        {
+            "id": "9",
+            "max_type": "4",
+            "max_num": "6",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "39",
+            "max_type": "8",
+            "max_num": "6",
+            "field": "max_gun_preset",
+            "step": "1",
+            "cost": "380"
+        },
+        {
+            "id": "16",
+            "max_type": "5",
+            "max_num": "6",
+            "field": "max_fix_slot",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "29",
+            "max_type": "7",
+            "max_num": "7",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "17",
+            "max_type": "5",
+            "max_num": "7",
+            "field": "max_fix_slot",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "5",
+            "max_type": "3",
+            "max_num": "7",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "10",
+            "max_type": "4",
+            "max_num": "8",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "680"
+        },
+        {
+            "id": "30",
+            "max_type": "7",
+            "max_num": "8",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "18",
+            "max_type": "5",
+            "max_num": "8",
+            "field": "max_fix_slot",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "6",
+            "max_type": "3",
+            "max_num": "8",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "20",
+            "max_type": "6",
+            "max_num": "8",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "31",
+            "max_type": "7",
+            "max_num": "9",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "7",
+            "max_type": "3",
+            "max_num": "9",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "8",
+            "max_type": "3",
+            "max_num": "10",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "11",
+            "max_type": "4",
+            "max_num": "10",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "680"
+        },
+        {
+            "id": "21",
+            "max_type": "6",
+            "max_num": "10",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "32",
+            "max_type": "7",
+            "max_num": "10",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "41",
+            "max_type": "7",
+            "max_num": "11",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "45",
+            "max_type": "3",
+            "max_num": "11",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "46",
+            "max_type": "3",
+            "max_num": "12",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "42",
+            "max_type": "7",
+            "max_num": "12",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "22",
+            "max_type": "6",
+            "max_num": "12",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "12",
+            "max_type": "4",
+            "max_num": "12",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "680"
+        },
+        {
+            "id": "43",
+            "max_type": "7",
+            "max_num": "13",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "47",
+            "max_type": "3",
+            "max_num": "13",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "13",
+            "max_type": "4",
+            "max_num": "14",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "680"
+        },
+        {
+            "id": "44",
+            "max_type": "7",
+            "max_num": "14",
+            "field": "maxdorm",
+            "step": "1",
+            "cost": "680"
+        },
+        {
+            "id": "23",
+            "max_type": "6",
+            "max_num": "14",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "48",
+            "max_type": "3",
+            "max_num": "14",
+            "field": "maxteam",
+            "step": "1",
+            "cost": "880"
+        },
+        {
+            "id": "24",
+            "max_type": "6",
+            "max_num": "16",
+            "field": "max_equip_build_slot",
+            "step": "2",
+            "cost": "380"
+        },
+        {
+            "id": "14",
+            "max_type": "4",
+            "max_num": "16",
+            "field": "max_build_slot",
+            "step": "2",
+            "cost": "680"
+        }
+    ],
+    "max_limit": {
+        "maxequip": "1500",
+        "maxgun": "1000",
+        "maxteam": "14",
+        "max_build_slot": "16",
+        "max_equip_build_slot": "16",
+        "max_fix_slot": "8",
+        "maxdorm": "14",
+        "max_gun_preset": "6",
+        "max_fairy": "300",
+        "max_upgrade_slot": "4",
+        "max_sangvis": "300"
+    },
+    "pointmall_quota": {}
+}
