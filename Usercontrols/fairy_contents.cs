@@ -22,6 +22,7 @@ namespace GFBattleSimulator
         private JObject fairyData;
         private JObject fairy_trait;
 
+        private string[] fairyQuality = {"1","2","3","4","5"};
         private String[] fairySkill = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
         private string[] fairyTrait = 
             { 
@@ -59,7 +60,7 @@ namespace GFBattleSimulator
             filterbtn.Text = "\ue71c";
 
             skillLv.Items.AddRange(fairySkill);
-
+            quality.Items.AddRange(fairyQuality);
             trait.Items.AddRange(fairyTrait);
         }
 
@@ -111,6 +112,7 @@ namespace GFBattleSimulator
 
             skillLv.SelectedItem = data["1"]["skill_lv"].ToString();
             trait.SelectedItem = fairy_trait[data["1"]["passive_skill"].ToString()]["name"].ToString();
+            quality.SelectedItem = data["1"]["quality_lv"].ToString();
         }
 
         private void skillLv_SelectedIndexChanged(object sender, EventArgs e)

@@ -2935,7 +2935,6 @@
             this.doll_0.TabIndex = 12;
             this.doll_0.TabStop = false;
             this.doll_0.Click += new System.EventHandler(this.doll_leader_Click);
-            this.doll_0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             // 
             // panel7
             // 
@@ -2958,7 +2957,6 @@
             this.Size = new System.Drawing.Size(1004, 630);
             this.Load += new System.EventHandler(this.squadContents_Load);
             this.SizeChanged += new System.EventHandler(this.squadContents_SizeChanged);
-            this.Resize += new System.EventHandler(this.squadContents_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

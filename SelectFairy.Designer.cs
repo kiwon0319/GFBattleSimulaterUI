@@ -93,8 +93,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.title);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectFairy";
-            this.Text = "Form1";
+            this.Text = "요정 선택";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SelectFairy_FormClosed);
             this.title.ResumeLayout(false);
             this.title.PerformLayout();

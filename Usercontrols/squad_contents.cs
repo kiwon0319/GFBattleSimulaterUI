@@ -447,39 +447,6 @@ namespace GFBattleSimulator
             }
         }
 
-        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-
-            }
-        }
-
-        private void doll_context_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void squadContents_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void squadContents_Load(object sender, EventArgs e)
         {
             refresh();

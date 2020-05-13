@@ -98,7 +98,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SelectDoll";
             this.Padding = new System.Windows.Forms.Padding(0, 20, 0, 8);
-            this.Text = "SelectDoll";
+            this.Text = "인형 선택";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectDoll_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SelectDoll_FormClosed);
             this.title.ResumeLayout(false);

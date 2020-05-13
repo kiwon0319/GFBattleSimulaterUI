@@ -39,33 +39,39 @@
             this.trait = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.toggle1 = new GFBattleSimulator.Usercontrols.Toggle();
             this.skillLv = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.fairy_tile = new GFBattleSimulator.Usercontrols.fairy_tile();
             this.stat = new System.Windows.Forms.FlowLayoutPanel();
             this.crit = new System.Windows.Forms.Panel();
             this.critValue = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pow = new System.Windows.Forms.Panel();
             this.powValue = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.hit = new System.Windows.Forms.Panel();
             this.hitValue = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.dodge = new System.Windows.Forms.Panel();
             this.dodgeValue = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.armor = new System.Windows.Forms.Panel();
             this.armorValue = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.toggle1 = new GFBattleSimulator.Usercontrols.Toggle();
-            this.fairy_tile = new GFBattleSimulator.Usercontrols.fairy_tile();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.quality = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.level = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -73,15 +79,17 @@
             this.panel3.SuspendLayout();
             this.stat.SuspendLayout();
             this.crit.SuspendLayout();
-            this.pow.SuspendLayout();
-            this.hit.SuspendLayout();
-            this.dodge.SuspendLayout();
-            this.armor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.hit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.dodge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.armor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidepanel
@@ -89,7 +97,7 @@
             this.sidepanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.sidepanel.Location = new System.Drawing.Point(787, 0);
             this.sidepanel.Name = "sidepanel";
-            this.sidepanel.Size = new System.Drawing.Size(250, 539);
+            this.sidepanel.Size = new System.Drawing.Size(250, 847);
             this.sidepanel.TabIndex = 0;
             // 
             // panel1
@@ -151,6 +159,8 @@
             this.panel2.AutoScroll = true;
             this.panel2.AutoSize = true;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel3);
@@ -158,7 +168,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 40);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(24, 16, 24, 16);
-            this.panel2.Size = new System.Drawing.Size(787, 499);
+            this.panel2.Size = new System.Drawing.Size(787, 807);
             this.panel2.TabIndex = 2;
             // 
             // panel5
@@ -211,6 +221,20 @@
             this.panel11.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panel11.Size = new System.Drawing.Size(739, 150);
             this.panel11.TabIndex = 1;
+            // 
+            // toggle1
+            // 
+            this.toggle1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.toggle1.BackColor = System.Drawing.Color.Transparent;
+            this.toggle1.Location = new System.Drawing.Point(-1, 55);
+            this.toggle1.Name = "toggle1";
+            this.toggle1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.toggle1.ShowTitle = false;
+            this.toggle1.Size = new System.Drawing.Size(105, 34);
+            this.toggle1.TabIndex = 58;
+            this.toggle1.Title = "토글";
+            this.toggle1.toggleState = true;
+            this.toggle1.ToggleChanged += new System.EventHandler(this.toggle1_ToggleChanged);
             // 
             // skillLv
             // 
@@ -265,6 +289,21 @@
             this.panel3.Size = new System.Drawing.Size(739, 236);
             this.panel3.TabIndex = 0;
             // 
+            // fairy_tile
+            // 
+            this.fairy_tile.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.fairy_tile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fairy_tile.BackgroundImage")));
+            this.fairy_tile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.fairy_tile.fairy_lv = "100";
+            this.fairy_tile.Location = new System.Drawing.Point(40, 11);
+            this.fairy_tile.Margin = new System.Windows.Forms.Padding(0);
+            this.fairy_tile.MaximumSize = new System.Drawing.Size(128, 204);
+            this.fairy_tile.MinimumSize = new System.Drawing.Size(128, 204);
+            this.fairy_tile.Name = "fairy_tile";
+            this.fairy_tile.Size = new System.Drawing.Size(128, 204);
+            this.fairy_tile.TabIndex = 6;
+            this.fairy_tile.Click += new System.EventHandler(this.fairy_tile_Click);
+            // 
             // stat
             // 
             this.stat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -277,6 +316,7 @@
             this.stat.Controls.Add(this.armor);
             this.stat.Location = new System.Drawing.Point(200, 11);
             this.stat.Name = "stat";
+            this.stat.Padding = new System.Windows.Forms.Padding(16);
             this.stat.Size = new System.Drawing.Size(507, 206);
             this.stat.TabIndex = 5;
             // 
@@ -285,7 +325,8 @@
             this.crit.Controls.Add(this.critValue);
             this.crit.Controls.Add(this.label7);
             this.crit.Controls.Add(this.pictureBox1);
-            this.crit.Location = new System.Drawing.Point(3, 3);
+            this.crit.Location = new System.Drawing.Point(24, 24);
+            this.crit.Margin = new System.Windows.Forms.Padding(8);
             this.crit.Name = "crit";
             this.crit.Padding = new System.Windows.Forms.Padding(8);
             this.crit.Size = new System.Drawing.Size(176, 41);
@@ -315,12 +356,25 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "치명상";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::GFBattleSimulator.Properties.Resources.치명상;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(25, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // pow
             // 
             this.pow.Controls.Add(this.powValue);
             this.pow.Controls.Add(this.label11);
             this.pow.Controls.Add(this.pictureBox2);
-            this.pow.Location = new System.Drawing.Point(185, 3);
+            this.pow.Location = new System.Drawing.Point(216, 24);
+            this.pow.Margin = new System.Windows.Forms.Padding(8);
             this.pow.Name = "pow";
             this.pow.Padding = new System.Windows.Forms.Padding(8);
             this.pow.Size = new System.Drawing.Size(176, 41);
@@ -350,12 +404,25 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "화력";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::GFBattleSimulator.Properties.Resources.화력;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox2.MinimumSize = new System.Drawing.Size(25, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // hit
             // 
             this.hit.Controls.Add(this.hitValue);
             this.hit.Controls.Add(this.label19);
             this.hit.Controls.Add(this.pictureBox6);
-            this.hit.Location = new System.Drawing.Point(3, 50);
+            this.hit.Location = new System.Drawing.Point(24, 81);
+            this.hit.Margin = new System.Windows.Forms.Padding(8);
             this.hit.Name = "hit";
             this.hit.Padding = new System.Windows.Forms.Padding(8);
             this.hit.Size = new System.Drawing.Size(176, 41);
@@ -385,12 +452,25 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "명중";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::GFBattleSimulator.Properties.Resources.명중;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox6.MinimumSize = new System.Drawing.Size(25, 25);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
             // dodge
             // 
             this.dodge.Controls.Add(this.dodgeValue);
             this.dodge.Controls.Add(this.label17);
             this.dodge.Controls.Add(this.pictureBox5);
-            this.dodge.Location = new System.Drawing.Point(185, 50);
+            this.dodge.Location = new System.Drawing.Point(216, 81);
+            this.dodge.Margin = new System.Windows.Forms.Padding(8);
             this.dodge.Name = "dodge";
             this.dodge.Padding = new System.Windows.Forms.Padding(8);
             this.dodge.Size = new System.Drawing.Size(176, 41);
@@ -419,12 +499,25 @@
             this.label17.TabIndex = 0;
             this.label17.Text = "회피";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::GFBattleSimulator.Properties.Resources.회피;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox5.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox5.MinimumSize = new System.Drawing.Size(25, 25);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
             // armor
             // 
             this.armor.Controls.Add(this.armorValue);
             this.armor.Controls.Add(this.label13);
             this.armor.Controls.Add(this.pictureBox3);
-            this.armor.Location = new System.Drawing.Point(3, 97);
+            this.armor.Location = new System.Drawing.Point(24, 138);
+            this.armor.Margin = new System.Windows.Forms.Padding(8);
             this.armor.Name = "armor";
             this.armor.Padding = new System.Windows.Forms.Padding(8);
             this.armor.Size = new System.Drawing.Size(176, 41);
@@ -454,54 +547,6 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "장갑";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::GFBattleSimulator.Properties.Resources.치명상;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(25, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::GFBattleSimulator.Properties.Resources.화력;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox2.MinimumSize = new System.Drawing.Size(25, 25);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::GFBattleSimulator.Properties.Resources.명중;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox6.MinimumSize = new System.Drawing.Size(25, 25);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::GFBattleSimulator.Properties.Resources.회피;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox5.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox5.MinimumSize = new System.Drawing.Size(25, 25);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::GFBattleSimulator.Properties.Resources.장갑;
@@ -514,34 +559,78 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // toggle1
+            // panel4
             // 
-            this.toggle1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.toggle1.BackColor = System.Drawing.Color.Transparent;
-            this.toggle1.Location = new System.Drawing.Point(-1, 55);
-            this.toggle1.Name = "toggle1";
-            this.toggle1.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.toggle1.ShowTitle = false;
-            this.toggle1.Size = new System.Drawing.Size(105, 34);
-            this.toggle1.TabIndex = 58;
-            this.toggle1.Title = "토글";
-            this.toggle1.toggleState = true;
-            this.toggle1.ToggleChanged += new System.EventHandler(this.toggle1_ToggleChanged);
+            this.panel4.AutoSize = true;
+            this.panel4.Controls.Add(this.level);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(24, 483);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel4.Size = new System.Drawing.Size(739, 83);
+            this.panel4.TabIndex = 3;
             // 
-            // fairy_tile
+            // label1
             // 
-            this.fairy_tile.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.fairy_tile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fairy_tile.BackgroundImage")));
-            this.fairy_tile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fairy_tile.fairy_lv = "100";
-            this.fairy_tile.Location = new System.Drawing.Point(40, 11);
-            this.fairy_tile.Margin = new System.Windows.Forms.Padding(0);
-            this.fairy_tile.MaximumSize = new System.Drawing.Size(128, 204);
-            this.fairy_tile.MinimumSize = new System.Drawing.Size(128, 204);
-            this.fairy_tile.Name = "fairy_tile";
-            this.fairy_tile.Size = new System.Drawing.Size(128, 204);
-            this.fairy_tile.TabIndex = 6;
-            this.fairy_tile.Click += new System.EventHandler(this.fairy_tile_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(-7, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 8, 3, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 40);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "요정 레벨";
+            // 
+            // panel6
+            // 
+            this.panel6.AutoSize = true;
+            this.panel6.Controls.Add(this.quality);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(24, 566);
+            this.panel6.Name = "panel6";
+            this.panel6.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel6.Size = new System.Drawing.Size(739, 81);
+            this.panel6.TabIndex = 4;
+            // 
+            // quality
+            // 
+            this.quality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.quality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quality.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quality.ForeColor = System.Drawing.Color.White;
+            this.quality.FormattingEnabled = true;
+            this.quality.Location = new System.Drawing.Point(3, 55);
+            this.quality.Name = "quality";
+            this.quality.Size = new System.Drawing.Size(150, 23);
+            this.quality.TabIndex = 57;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(-7, 8);
+            this.label2.Margin = new System.Windows.Forms.Padding(3, 8, 3, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 40);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "레어도";
+            // 
+            // level
+            // 
+            this.level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.level.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.level.Enabled = false;
+            this.level.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level.ForeColor = System.Drawing.Color.White;
+            this.level.Location = new System.Drawing.Point(3, 55);
+            this.level.Name = "level";
+            this.level.Size = new System.Drawing.Size(150, 25);
+            this.level.TabIndex = 58;
+            this.level.Text = "0";
             // 
             // fairyContents
             // 
@@ -552,7 +641,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidepanel);
             this.Name = "fairyContents";
-            this.Size = new System.Drawing.Size(1037, 539);
+            this.Size = new System.Drawing.Size(1037, 847);
             this.Load += new System.EventHandler(this.fairyContents_Load);
             this.SizeChanged += new System.EventHandler(this.UserControl4_SizeChanged);
             this.panel1.ResumeLayout(false);
@@ -567,15 +656,19 @@
             this.panel3.PerformLayout();
             this.stat.ResumeLayout(false);
             this.crit.ResumeLayout(false);
-            this.pow.ResumeLayout(false);
-            this.hit.ResumeLayout(false);
-            this.dodge.ResumeLayout(false);
-            this.armor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pow.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.hit.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.dodge.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.armor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,5 +713,11 @@
         private System.Windows.Forms.ComboBox trait;
         private System.Windows.Forms.Label label15;
         private Usercontrols.fairy_tile fairy_tile;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.ComboBox quality;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox level;
     }
 }
